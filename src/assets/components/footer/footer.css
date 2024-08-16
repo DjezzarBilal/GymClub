@@ -1,0 +1,47 @@
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  position: relative;
+}
+.social-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.social-icon > img {
+  width: 4rem;
+  height: 4rem;
+}
+.logo-i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-i > img {
+  width: 6rem;
+  padding: 2rem;
+}
+hr {
+  width: 100vw;
+  border: 1px solid var(--orange);
+}
+.blur-f-1 {
+  width: 32rem;
+  height: 23rem;
+  bottom: 0rem;
+  left: 25%;
+
+  filter: blur(200px);
+  -webkit-filter: blur(200px);
+}
+.blur-f-2 {
+  width: 32rem;
+  height: 32rem;
+  bottom: 0;
+  right: 15%;
+  filter: blur(200px);
+  -webkit-filter: blur(200px);
+}

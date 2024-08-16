@@ -1,0 +1,88 @@
+.joinus {
+  display: flex;
+  flex: 1 1;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 0 2rem;
+  position: relative;
+}
+.right-j {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+.right-j span {
+  font-weight: bold;
+  font-size: 3rem;
+}
+.right-j > div:nth-of-type(1) > :nth-child(2) {
+  color: white;
+}
+.right-j > div:nth-of-type(2) > :nth-child(1) {
+  color: white;
+}
+.right-j hr {
+  width: 10.5rem;
+  border: 3px solid orange;
+  position: absolute;
+  left: 3rem;
+  top: 1rem;
+  border-radius: 20%;
+  -webkit-border-radius: 20%;
+  -moz-border-radius: 20%;
+  -ms-border-radius: 20%;
+  -o-border-radius: 20%;
+}
+.left-j > div {
+  display: flex;
+  flex: 1;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 1rem 2rem;
+}
+.right-j line {
+  position: absolute;
+  width: 2rem;
+  height: 1rem;
+  background-color: var(--orange);
+  top: 1rem;
+  left: 2rem;
+}
+.email_container {
+  display: flex;
+  gap: 3rem;
+  background-color: var(--gray);
+  padding: 2rem;
+}
+.email_container input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--lightgray);
+}
+.email_container input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--lightgray);
+}
+::placeholder {
+  color: var(--lightgray);
+}
+.btn-j {
+  background-color: var(--orange);
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .joinus {
+    flex-direction: column;
+  }
+  .right-j span {
+    font-size: xx-large;
+    flex-direction: column;
+  }
+  .email_container {
+    padding: 1rem;
+    gap: 1rem;
+  }
+}

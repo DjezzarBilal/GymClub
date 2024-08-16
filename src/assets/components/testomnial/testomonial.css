@@ -1,0 +1,102 @@
+.Testomonial {
+  display: flex;
+
+  gap: 2rem;
+  padding: 0 2rem;
+}
+.left-tes {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1;
+  gap: 2rem;
+  text-transform: uppercase;
+  color: white;
+}
+.left-tes > :nth-child(1) {
+  color: var(--orange);
+  font-weight: bold;
+}
+.left-tes > :nth-child(2),
+.left-tes > :nth-child(3) {
+  font-weight: bold;
+  font-size: 3rem;
+}
+.left-tes > :nth-child(4) {
+  text-transform: none;
+  text-align: justify;
+  letter-spacing: 2px;
+  line-height: 40px;
+}
+.right-tes {
+  flex: 1;
+  position: relative;
+}
+.right-tes > img {
+  position: absolute;
+  width: 17rem;
+  height: 20rem;
+  object-fit: cover;
+  right: 8rem;
+  top: 2rem;
+}
+.right-tes > :nth-child(1) {
+  position: absolute;
+  width: 17rem;
+  height: 20rem;
+  border: 2px solid orange;
+  background-color: transparent;
+  top: 0.9rem;
+  right: 9rem;
+}
+.right-tes > :nth-child(2) {
+  position: absolute;
+  width: 17rem;
+  height: 20rem;
+  background: var(--planCard);
+  right: 7rem;
+  top: 4rem;
+}
+.arrows {
+  display: flex;
+  gap: 1rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 3rem;
+}
+.arrows > img {
+  width: 1.5rem;
+  cursor: pointer;
+  padding: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .Testomonial {
+    flex-direction: column;
+  }
+  .left-tes > :nth-child(2),
+  .left-tes > :nth-child(3) {
+    font-size: xx-large;
+  }
+  .left-tes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .right-tes > div {
+    position: relative;
+    display: none;
+  }
+  .right-tes > img {
+    position: relative;
+    top: 0;
+    right: 0;
+    align-self: center;
+  }
+  .right-tes > .arrows {
+    display: block;
+
+    bottom: 0;
+    left: 0;
+  }
+}
